@@ -4,7 +4,7 @@ import {motion} from 'framer-motion'
 import '../css/snewtyle.css'
 const HoverEffect = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const items = ["🙌 Hello, 😊", "welcome", "to my", "portfolio"];
+  const items = ["🙌 Hello, ", "welcome", "to my", "portfolio"];
 
   useEffect(() => {
     const interval = setInterval(() => {
