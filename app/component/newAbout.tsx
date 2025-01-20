@@ -3,9 +3,6 @@ import Image from "next/image";
 import { WobbleCard } from "./ui/wobble-card";
 import { motion } from "framer-motion";
 import "../css/style.css"
-import im1 from "../../public/images/comp.jpg"
-import im2 from  "../../public/images/mypic2.png"
-import im3 from "../../public/images/tie2.jpg"
 export function WobbleCardDemo() {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full">
@@ -50,10 +47,10 @@ export function WobbleCardDemo() {
            className=" h[300px] w-[300px] mr-[-200px]  "
           >
         <Image
-  src={im1}
+  src="https://maheshkumar77.github.io/Portfolio_Use_Nextjs/comp.jpg"
   width={300}
   height={300}
-  alt="im1"
+  alt="linear demo image"
   className="absolute mt-8 -right-[300px] lg:-right-[20%] grayscale filter -bottom-10 object-cover "
 />
 </motion.div>
@@ -68,7 +65,7 @@ export function WobbleCardDemo() {
         <div className="r animate-size"></div>
         <div className="r animate-size"></div>
       <Image
-       src={im2}
+       src="https://maheshkumar77.github.io/Portfolio_Use_Nextjs/mypic2.png"
        width={300}
        height={300}
        alt="linear demo image"
@@ -104,7 +101,7 @@ export function WobbleCardDemo() {
          transition={{duration:1}}
          className=" h-[250px] w-[250px] -ml-[100px] mt-[-80px] rotate-45">
           <Image 
-          src={im3}
+          src="https://maheshkumar77.github.io/Portfolio_Use_Nextjs/tie2.jpg"
           width={250}
           height={250}
           alt="linear demo image"
@@ -116,7 +113,7 @@ export function WobbleCardDemo() {
          transition={{duration:1}}
          className=" h-[250px] w-[250px] -ml-[100px] mt-[200px] rotate-45">
           <Image 
-          src={im1}
+          src="https://maheshkumar77.github.io/Portfolio_Use_Nextjs/comp.jpg"
           width={250}
           height={250}
           alt="linear demo image"
