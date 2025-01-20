@@ -3,6 +3,7 @@ import Image from "next/image";
 import { WobbleCard } from "./ui/wobble-card";
 import { motion } from "framer-motion";
 import "../css/style.css"
+import im1 from "../../images/comp.jpg"
 export function WobbleCardDemo() {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full">
@@ -47,7 +48,7 @@ export function WobbleCardDemo() {
            className=" h[300px] w-[300px] mr-[-200px]  "
           >
         <Image
-  src="/comp.jpg"
+  src={im1}
   width={300}
   height={300}
   alt="linear demo image"
