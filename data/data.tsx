@@ -4,31 +4,35 @@ export const projectdata = [
   {
     id: 1,
     projectname: "Realtime Chat Application",
-    projectdesc:`Real-time chat applications enhance communication by enabling instant interactions,
-     which improves collaboration and customer service.
-     They also boost engagement and user retention by providing immediate responses and personalized experiences.`,
-    projectlink: "https://github.com/maheshkumar77/Real--time-Chat-Application.git",
+    projectdesc:`A real-time chat application built with React.js, Tailwind CSS, Node.js, Express.js, and MongoDB, enabling users to send and receive messages instantly. It supports user authentication,
+     private rooms, and a responsive design for seamless communication.`,
+    projectlink1: "https://github.com/maheshkumar77/Real--time-Chat-Application.git",
+    projectlink2l: "https://real-time-chata-pplication.netlify.app/login",
     projectimg:"https://maheshkumar77.github.io/Portfolio_Use_Nextjs/project1.jpg",
-    technology: ["Reactjs", "Tailwindcss", "Nodejs", "ExpressJs", "Mongodb"],
+    technology: ["Reactjs", "Tailwindcss","Javascript", "Nodejs", "ExpressJs", "Mongodb"],
     
   },
   {
     id: 2,
     projectname: "eCommerce Website",
     
-    projectdesc:`An eCommerce website allows businesses to sell products online with features like product catalogs, secure payments, and order tracking.
-     It offers 24/7 shopping convenience, expanded market reach, and improved customer engagement.`,
-    projectlink: "https://ecoshophear.netlify.app/",
+    projectdesc:`This eCommerce website is built using React, Material UI, 
+    and Bootstrap for a responsive and user-friendly interface, with Razorpay integration for secure payments.
+     The backend is powered by Node.js, and data is efficiently stored in 
+    MongoDB for seamless management.`,
+    projectlink1: "https://github.com/maheshkumar77/E-Commerce-Website",
+    projectlink2l: "https://ecoshophear.netlify.app/",
     projectimg:"https://maheshkumar77.github.io/Portfolio_Use_Nextjs/ecomerce.jpg",
-    technology: ["Reactjs", "Tailwindcss", "Nodejs", "ExpressJs", "Mongodb","RestApi","Razorpay Payment Gateway"],
+    technology: ["Reactjs","Javascript",  "Tailwindcss", "Nodejs", "ExpressJs", "Mongodb","RestApi","Razorpay Payment Gateway"],
   },
   {
     id: 3,
     projectname: "Recipi Application",
     
-    projectdesc:`A recipe application lets users browse, save, and share recipes with features like search filters and meal planning. It offers personalized recommendations,
-     making meal prep easier, discovering new dishes, and maintaining a healthy kitchen routine.`,
-    projectlink: "https://github.com/maheshkumar77/Food-Recipe-Application",
+    projectdesc:`The Recipe Application utilizes REST API calls to fetch data, with a responsive frontend built using React, TypeScript, and Tailwind CSS. It features a search bar to 
+    find food recipes and provides detailed recipe instructions along with YouTube video links.`,
+    projectlink1: "https://github.com/maheshkumar77/Food-Recipe-Application",
+    projectlink2l: "https://github.com/maheshkumar77/Food-Recipe-Application",
     projectimg:"https://maheshkumar77.github.io/Portfolio_Use_Nextjs/recipi.jpg",
     technology: ["Reactjs", "Tailwindcss","RestApi","Typescript"],
   },
@@ -38,7 +42,8 @@ export const projectdata = [
     
     projectdesc:`A portfolio website highlights an individual's skills, projects, and achievements,
      offering a professional online presence. It helps enhance personal branding, attract clients or employers, and showcase past work effectively.`,
-    projectlink: "https://github.com/maheshkumar77/New_Portfulio",
+    projectlink1: "https://github.com/maheshkumar77/New_Portfulio",
+    projectlink2l: "https://maheshkumar77.github.io/NewPortfolio/",
     projectimg:"https://maheshkumar77.github.io/Portfolio_Use_Nextjs/chat.jpg",
     technology: ["Nextjs","Typescript","AceternityUi","Tailwindcss"],
   },

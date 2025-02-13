@@ -37,7 +37,7 @@ export function ThreeDCardDemo() {
   <div className="text-[10px] text-white float-start">
     Use Technology:-
     {item.technology.map((i, it) => (
-      <span key={it}>
+      <span key={it} className=" text-blue-700 ">
         {i}
         {it < item.technology.length - 1 && ', '}
       </span>
@@ -46,9 +46,11 @@ export function ThreeDCardDemo() {
 </div>
         </CardItem>
 
-        <CardItem translateZ="100" className="w-full mt-4">
+        <CardItem translateZ="100" 
+         
+        className="w-full mt-4 cursor-pointer">
           <Image
-            src={item.projectimg} // Add the image path here
+            src={item.projectimg} 
             height={1000}
             width={1000}
             className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
@@ -60,11 +62,25 @@ export function ThreeDCardDemo() {
           <CardItem
             translateZ={20}
             as={Link}
-            href={item.projectlink}
+            href={item. projectlink2l}
             target="__blank"
             className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white">
-            See the code →
+             
+              <p className=" bg-green-600 px-1 py-1 text-white-100 lg:mt-[-30] mt-[-10] float-start"> See Live</p>
+              
           </CardItem>
+          <CardItem
+            translateZ={20}
+            as={Link}
+            href={item.projectlink1}
+            target="__blank"
+            className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white">
+              
+              
+              <p className="  px-1 py-1 text-white-100 lg:mt-[-30] mt-[-10] float-right">See the code →</p> 
+              
+          </CardItem>
+          
         </div>
       </CardBody>
     </CardContainer>

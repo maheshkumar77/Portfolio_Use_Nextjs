@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import React, { useState } from "react";
 import {
   motion,
@@ -21,14 +21,12 @@ export const FloatingNav = ({
   className?: string;
 }) => {
   const { scrollYProgress } = useScroll();
-
   const [visible, setVisible] = useState(false);
 
+  // Scroll event to toggle visibility
   useMotionValueEvent(scrollYProgress, "change", (current) => {
-    // Check if current is not undefined and is a number
     if (typeof current === "number") {
       let direction = current! - scrollYProgress.getPrevious()!;
-
       if (scrollYProgress.get() < 0.05) {
         setVisible(false);
       } else {
@@ -40,6 +38,17 @@ export const FloatingNav = ({
       }
     }
   });
+
+  // Scroll to a specific section smoothly
+  const scrollToSection = (sectionId: string) => {
+    const targetElement = document.getElementById(sectionId);
+    if (targetElement) {
+      targetElement.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
 
   return (
     <AnimatePresence mode="wait">
@@ -60,19 +69,18 @@ export const FloatingNav = ({
           className
         )}
       >
-        {navItems.map((navItem: any, idx: number) => (
-          <Link
+        {navItems.map((navItem, idx) => (
+          <button
             key={`link=${idx}`}
-            href={navItem.link}
+            onClick={() => scrollToSection(navItem.link.slice(1))} // Remove # from link
             className={cn(
               "relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500"
             )}
           >
             <span className="block sm:hidden">{navItem.icon}</span>
             <span className="hidden sm:block text-sm">{navItem.name}</span>
-          </Link>
+          </button>
         ))}
-        
       </motion.div>
     </AnimatePresence>
   );

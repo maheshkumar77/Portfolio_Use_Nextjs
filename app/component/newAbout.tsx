@@ -59,19 +59,20 @@ export function WobbleCardDemo() {
       </WobbleCard>
       
       <WobbleCard containerClassName="col-span-1 min-h-[300px] overflow-hidden justify-center items-center ">
-      <div className=" main lg:mt-[-80px] mt-[-10px] ">
-      <div className="r animate-size "></div>
-        <div className="r animate-size"></div>
-        <div className="r animate-size"></div>
-        <div className="r animate-size"></div>
+      <motion.div
+      initial={{opacity:0,height:100,width:100,x:100}}
+      whileInView={{opacity:1,height:300,width:300,x:0}}
+      transition={{duration:1}}
+      className=" flex justify-center items-center rounded-md overflow-hidden">
+     
       <Image
        src="https://maheshkumar77.github.io/Portfolio_Use_Nextjs/mypic2.png"
        width={300}
        height={300}
        alt="linear demo image"
-       className=" relative z-[0] rounded-xl mx-2"
+       className=" relative rounded-md mx-2"
       />
-      </div>
+      </motion.div>
    
 
       </WobbleCard>

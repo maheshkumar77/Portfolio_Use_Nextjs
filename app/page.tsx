@@ -11,7 +11,8 @@ import { IoCodeWorkingOutline } from "react-icons/io5";
 import { FaMessage } from "react-icons/fa6";
 import { LampDemo } from './component/Aboutright'
 import Skills from './component/Skills'
-
+import { RiBaseStationLine } from "react-icons/ri";
+import GetinPage from './component/Getinbutton'
 
 
 const page = () => {
@@ -19,19 +20,33 @@ const page = () => {
     <main className=' relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5'>
     <div className=' max-w-7xl w-full flex flex-col gap-8 justify-center items-center h-auto'>
       <FloatingNav navItems={[
-        {name:'Home' , link:"/", icon:<FaHome/>},
-        {name:'About', link:"/About", icon:<MdOutlineRoundaboutRight/>},
-        {name:'Work', link:"/work", icon:<IoCodeWorkingOutline/>},
-        {name:'HireMe' ,link:"/mesage", icon:<FaMessage/>}
+        {name:'Home' , link:"#home", icon:<FaHome/>},
+        {name:'About', link:"#About", icon:<MdOutlineRoundaboutRight/>},
+        {name:'Work', link:"#work", icon:<IoCodeWorkingOutline/>},
+        {name:'HireMe' ,link:"#hireMe", icon:<FaMessage/>},
+        {name:'FindMeOnOnline' ,link:"#online", icon:<RiBaseStationLine/>}
       ]}/>
+     <div id='home' >
      <Hero/>
-    <WobbleCardDemo/>
-    <Skills/>
-    <LampDemo/>
+     </div>
+     <div id='About' className=' w-[100%]'>
+     <WobbleCardDemo/>
+     </div>
+     
+ 
+     <div id='skill' >
+     <Skills/>
+     </div>
+     <div id='work' >
+     <LampDemo/>
     <ThreeDCardDemo/>
-    <GetinTouch/>
-  <FloatingDockDemo/> 
-
+     </div>
+     <div id='hireMe' >
+     <GetinTouch/>
+     </div>
+     <div id='online'>
+     <FloatingDockDemo/> 
+     </div> 
   </div>
     </main>
   )

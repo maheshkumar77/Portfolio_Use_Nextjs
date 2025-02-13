@@ -4,12 +4,12 @@ import {motion} from 'framer-motion'
 import '../css/snewtyle.css'
 const HoverEffect = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const items = ["🙌 Hello, ", "welcome", "to my", "portfolio"];
+  const items = ["🙌 Hello, ", "welcome", "to my", "portfolio.! "];
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % items.length);
-    }, 1500); 
+    }, 2000); 
 
     return () => clearInterval(interval); 
   }, [items.length]);
@@ -20,7 +20,7 @@ const HoverEffect = () => {
       initial={{opacity:0}}
       whileInView={{opacity:1}}
       transition={{duration:1}}
-      className="flex justify-center items-center flex-wrap w-[50%] h-40  ">
+      className="flex justify-center items-center flex-wrap w-[50%] h-32">
         {items.map((item, index) => (
           <div
           id="m"
@@ -31,18 +31,10 @@ const HoverEffect = () => {
               opacity: currentIndex === index ? "1" : "0",
               cursor: currentIndex === index ? "pointer" : "default", }}
           >
-             <div
-             id="l"
-            key={index}
-            className="flex justify-center h-[95px] items-center rounded-2xl transition-all duration-300  ease-in-out mx-2 my-0 absolute"
-            style={{
-             width: "100%",
-            }}
-          >
             
             <div
             id="k"
-              className="flex justify-center items-center h-[90px] bg-black-100 rounded-2xl overflow-hidden px-3 absolute"
+              className="flex justify-center items-center h-auto bg-transparent rounded-2xl overflow-hidden px-3 absolute"
               style={{
                 width: "99%", 
               }}
@@ -50,7 +42,7 @@ const HoverEffect = () => {
               <p className="lg:text-3xl md:text-2xl text-xl font-bold text-white m-0">{item}</p>
             </div>
           </div>
-          </div>
+      
         ))}
       </motion.div>
     </div>

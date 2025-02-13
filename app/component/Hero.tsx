@@ -4,6 +4,8 @@ import { TextGenerateEffect } from './ui/textgenerateeffect'
 import Bordermagic from './ui/Bordermagic'
 import { FaLocationArrow } from 'react-icons/fa'
 import HoverEffect from "./welcome"
+import Iconicstyle from './Iconicstyle'
+import Resume from './Resumepdf'
 const Hero = () => {
   return (
     <div className=' pb20 pt-36'>
@@ -19,21 +21,19 @@ const Hero = () => {
      
     </div>
     <HoverEffect/>
-    <div className=' flex justify-center relative my-20 z-10 '>
+    <div className=' flex justify-center relative mt-20 z-10 '>
         <div className=' max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center'>
             <h2 className=' uppercase tracking-widest text-xs text-center text-blue-100 max-w-80'>
-                Dynamic web magic with Next.js 
+              Welcome To My World
             </h2>
+            <Resume/>
             <TextGenerateEffect
             className=' text-center text-[40px] md:text-5xl lg:text-6xl'
-            words='Transforming concepts into seamless 
-            expreance'
-            
+            words='Hi, I’m Mahesh Kumar Sahu'
             />
-            <p className=' text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl '>
-                Hii, I&rsquo;am Mahesh Ku. Sahu, a Fullstack Devloper 
-            </p>
-           <a href='#'>
+            <Iconicstyle/>
+            
+           <a href='#work'>
            <Bordermagic
            titel='Show my work'
            icon={<FaLocationArrow/>}

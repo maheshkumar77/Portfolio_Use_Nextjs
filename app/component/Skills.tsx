@@ -6,6 +6,9 @@ import { RiNextjsFill, RiTailwindCssLine } from "react-icons/ri";
 import { IoLogoJavascript } from "react-icons/io5";
 import { TiHtml5 } from "react-icons/ti";
 import { SiTypescript } from "react-icons/si";
+import { SiVite } from "react-icons/si";
+import { SiPostman } from "react-icons/si";
+import { SiAuthentik } from "react-icons/si";
 import '../css/style.css';
 
 const Skills = () => {
@@ -201,6 +204,47 @@ const Skills = () => {
           
           <p className="text-xl text-white font-semibold">GitHub</p>
         </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={transition}
+          className="flex justify-center items-center flex-col  "
+        >
+       
+          <SiVite
+           className="text-6xl text-blue-800" />
+          
+          <p className="text-xl text-white font-semibold">Vite</p>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={transition}
+          className="flex justify-center items-center flex-col  "
+        >
+       
+          < SiPostman
+           className="text-6xl text-blue-800" />
+          
+          <p className="text-xl text-white font-semibold">
+            Postmen
+          </p>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={transition}
+          className="flex justify-center items-center flex-col  "
+        >
+       
+          < SiAuthentik
+           className="text-6xl text-blue-800" />
+          
+          <p className="text-xl text-white font-semibold">
+            Auth.Js
+          </p>
+        </motion.div>
+        
        </div>
     
     </div>
