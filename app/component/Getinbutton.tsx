@@ -7,21 +7,7 @@ import '../css/getintoch.css'
 
 
 export default function GetinPage() {
-  const [checked, setChecked] = useState({
-    fullstack: false,
-    frontend: false,
-    backend: false,
-    webdev: false,
-  });
-
-  const handleChange = (event) => {
-    const { name, checked } = event.target;
-    setChecked((prev) => ({
-      ...prev,
-      [name]: checked,
-    }));
-  };
-
+ 
   return (
     <div className="flex flex-col items-center justify-center h-auto bg-black-100 p-4 ">
       <motion.div
@@ -85,8 +71,7 @@ export default function GetinPage() {
                     <input
                       type="checkbox"
                       name="fullstack"
-                      checked={checked.fullstack}
-                      onChange={handleChange}
+                      
                       className="h-6 w-6 rounded-full border-2 border-gray-400 checked:bg-blue-500 focus:ring-2 focus:ring-blue-500"
                     />
                     <span className="text-xs text-white">Fullstack Developer</span>
@@ -95,8 +80,7 @@ export default function GetinPage() {
                     <input
                       type="checkbox"
                       name="frontend"
-                      checked={checked.frontend}
-                      onChange={handleChange}
+                      
                       className="h-6 w-6 rounded-full border-2 border-gray-400 checked:bg-blue-500 focus:ring-2 focus:ring-blue-500"
                     />
                     <span className="text-xs text-white">Frontend Developer</span>
@@ -105,8 +89,7 @@ export default function GetinPage() {
                     <input
                       type="checkbox"
                       name="backend"
-                      checked={checked.backend}
-                      onChange={handleChange}
+                      
                       className="h-6 w-6 rounded-full border-2 border-gray-400 checked:bg-blue-500 focus:ring-2 focus:ring-blue-500"
                     />
                     <span className="text-xs text-white flex">Backend Developer</span>
@@ -115,8 +98,7 @@ export default function GetinPage() {
                     <input
                       type="checkbox"
                       name="webdev"
-                      checked={checked.webdev}
-                      onChange={handleChange}
+                      
                       className="h-6 w-6 rounded-full border-2 border-gray-400 checked:bg-blue-500 focus:ring-2 focus:ring-blue-500"
                     />
                     <span className="text-xs text-white">Web Developer</span>
@@ -143,21 +125,21 @@ export default function GetinPage() {
                   />
                 </div>
                 <div className="mb-4">
-                  <label className="block text-sm font-medium mb-2" htmlFor="projectCategory">Project category</label>
+                  <label className="block text-sm font-medium mb-2" htmlFor="projectCategory">Phone No.</label>
                   <input
                     type="text"
-                    id="projectCategory"
+                    id="Phonenumber"
                     className="w-full px-3 py-2 border rounded-xl"
-                    placeholder="Project category"
+                    placeholder="Phone No."
                   />
                 </div>
                 <div className="mb-4">
-                  <label className="block text-sm font-medium mb-2" htmlFor="budget">Budget</label>
+                  <label className="block text-sm font-medium mb-2" htmlFor="budget">Subject</label>
                   <input
                     type="text"
-                    id="budget"
+                    id="Subject"
                     className="w-full px-3 py-2 border rounded-xl"
-                    placeholder="Budget"
+                    placeholder="Subject"
                   />
                 </div>
                 <div className="mb-4">
