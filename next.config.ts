@@ -7,7 +7,7 @@ const nextConfig: NextConfig = {
 export default nextConfig;
 module.exports = {
   images: {
-   
+    domains: ['maheshkumar77.github.io'],
   },
 };
 
